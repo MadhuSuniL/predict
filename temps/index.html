@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script><script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="fixed top-[50%] shadow-lg shadow-gray-900 border-2 border-white left-[50%] rounded-md p-5 py-1  text-white w-[95%] md:w-[30%] translate-x-[-50%] translate-y-[-50%] bg-gradient-to-r  from-yellow-500 to-red-400">
+        <h1 class="text-center font-mono m-3 mt-1 font-bold text-2xl">Find Price Now</h1>
+        <center>
+<!-- mob_name -->
+<label class="font-bold" for="mob_name">Select Brand</label> <select value="Redmi" id="mob_name" class="rounded-md text-xl bg-gradient-to-l border-2 border-white  from-yellow-500 to-red-400">
+            <option value="Redmi" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Redmi</option>
+            <option value="APPLE" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">APPLE</option>
+            <option value="Google" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Google</option>
+            <option value="I" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">I</option>
+            <option value="IQOO" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">IQOO</option>
+            <option value="Infinix" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Infinix</option>
+            <option value="LAVA" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">LAVA</option>
+            <option value="MOTOROLA" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MOTOROLA</option>
+            <option value="MarQ" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MarQ</option>
+            <option value="Mi" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mi</option>
+            <option value="Micromax" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Micromax</option>
+            <option value="Moto" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Moto</option>
+            <option value="Nokia" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Nokia</option>
+            <option value="OPPO" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">OPPO</option>
+            <option value="OnePlus" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">OnePlus</option>
+            <option value="POCO" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">POCO</option>
+            <option value="REDMI" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">REDMI</option>
+            <option value="Realme" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Realme</option>
+            <option value="SAMSUNG" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">SAMSUNG</option>
+            <option value="Tecno" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Tecno</option>
+            <option value="Xiaomi" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Xiaomi</option>
+            <option value="itel" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">itel</option>
+            <option value="realme" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">realme</option>
+            <option value="vivo" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">vivo</option>
+        </select><br><br>
+<!-- Ram -->
+        <label class="font-bold" for="mob_ram">Select Ram</label> <select value="4" id="mob_ram" class="rounded-md text-xl bg-gradient-to-l border-2 border-white  from-yellow-500 to-red-400">
+            <option value="4" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">4GB</option>
+            <option value="1" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">1GB</option>
+            <option value="2" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">2GB</option>
+            <option value="3" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">3GB</option>
+            <option value="6" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">6GB</option>
+            <option value="8" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">8GB</option>
+            <option value="12" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">12GB</option>
+            <option value="16" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">16GB</option>
+            <option value="32" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">32GB</option>
+            <option value="64" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">64GB</option> 
+        </select>
+<!-- rom -->
+        <br><br>
+        <label class="font-bold" for="mob_rom">Select Rom</label> <select value="64" id="mob_rom" class="rounded-md text-xl bg-gradient-to-l border-2 border-white  from-yellow-500 to-red-400">
+            <option value="64" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">64GB</option>
+            <option value="8" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">8GB</option>
+            <option value="16" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">16GB</option>
+            <option value="32" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">32GB</option>
+            <option value="128" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">128GB</option>
+            <option value="256" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">256GB</option>
+            <option value="512" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">512GB</option>
+            <option value="1024" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">1TB</option>
+                    </select>
+<!-- screen size -->
+    <br><br>
+    <label class="font-bold" for="mob_size">Enter Sreen Size </label> <input type="text" value="16.00" id="mob_size" class="pl-1 rounded-md text-xl bg-gradient-to-l border-2 border-white w-16 from-yellow-500 to-red-400"> <b>cm</b>
+<!-- disply type -->
+<br><br>
+<label class="font-bold" for="mob_display">Select Display type</label> <select value="Full HD+" id="mob_display" class="rounded-md text-xl bg-gradient-to-l border-2 border-white  from-yellow-500 to-red-400">
+            <option value="Full HD+" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Full HD+</option>
+            <option value="HD" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">HD</option>
+            <option value="HD+" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">HD+</option>
+            <option value="LCD" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">LCD</option>
+            <option value="Super Retina XDR" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Super Retina XDR</option>    
+</select>
+<!-- cam-f -->
+<br><br>
+<label class="font-bold" for="mob_fcam">Select Front Camera</label> <select value="16" id="mob_fcam" class="rounded-md text-xl bg-gradient-to-l border-2 border-white  from-yellow-500 to-red-400">
+    <option value="16" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">16MP</option>
+            <option value="0" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">0MP -No Front Camera</option>
+            <option value="2" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">2MP</option>
+            <option value="5" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">5MP</option>
+            <option value="8" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">8MP</option>
+            <option value="32" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">32MP</option>
+            <option value="48" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">48MP</option>
+            <option value="50" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">50MP</option>
+            <option value="64" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">64MP</option>
+            <option value="108" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">108MP</option>
+            <option value="200" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">200MP</option>
+</select>
+<!-- cam-b -->
+<br><br>
+<label class="font-bold" for="mob_bcam">Select Back Camera</label> <select value="48" id="mob_bcam" class="rounded-md text-xl bg-gradient-to-l border-2 border-white  from-yellow-500 to-red-400">
+    <option value="48" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">48MP</option>
+            <option value="0" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">0MP No Back Camera</option>
+            <option value="2" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">2MP</option>
+            <option value="5" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">5MP</option>
+            <option value="8" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">8MP</option>
+            <option value="16" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">16MP</option>
+            <option value="32" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">32MP</option>
+            <option value="50" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">50MP</option>
+            <option value="64" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">64MP</option>
+            <option value="108" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">108MP</option>
+            <option value="200" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">200MP</option>
+    
+</select>
+<!-- battary -->
+<br><br>
+<label class="font-bold" for="mob_battery">Select Battery</label> <select value="4000" id="mob_battery" class="rounded-md text-xl bg-gradient-to-l border-2 border-white  from-yellow-500 to-red-400">
+            <option value="4000" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">4000 Mah</option>
+            <option value="1000" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">1000 Mah</option>
+            <option value="2000" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">2000 Mah</option>
+            <option value="3000" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">3000 Mah</option>
+            <option value="3800" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">3800 Mah</option>
+            <option value="4500" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">4500 Mah</option>
+            <option value="5000" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">5000 Mah</option>
+            <option value="5024" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">5024 Mah</option>
+            <option value="5124" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">5124 Mah</option>
+            <option value="6000" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">6000 Mah</option>
+            <option value="7000" class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">7000 Mah</option>    
+</select>
+<!-- proc -->
+<br><br>
+<label class="font-bold" for="mob_proc">Select Processor</label> <select value="Qualcomm Snapdragon 662 " id="mob_proc" class="rounded-md text-xl bg-gradient-to-l border-2 border-white  from-yellow-500 to-red-400">
+<option value="Qualcomm Snapdragon 662 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 665 </option>
+<option value="A13 Bionic Chip " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">A13 Bionic Chip </option>
+<option value="A14 Bionic Chip with Next Generation Neural Engine " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">A14 Bionic Chip with Next Gen NE</option>
+<option value="A15 Bionic Chip " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">A15 Bionic Chip </option>
+<option value="A15 Bionic Chip, 6 Core  " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">A15 Bionic Chip, 6 Core  </option>
+<option value="A16 Bionic Chip, 6 Core  " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">A16 Bionic Chip, 6 Core  </option>
+<option value="Dimensity 810 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Dimensity 810 </option>
+<option value="Exynos 1280 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Exynos 1280 </option>
+<option value="Exynos 850 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Exynos 850 </option>
+<option value="Exynos Octa Core " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Exynos Octa Core </option>
+<option value="Exynos Octa Core  " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Exynos Octa Core  </option>
+<option value="Google Tensor " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Google Tensor </option>
+<option value="Google Tensor G2 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Google Tensor G2 </option>
+<option value="Helio A20 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Helio A20 </option>
+<option value="Helio G88 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Helio G88 </option>
+<option value="MediaTek Dimensity 1200 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Dimensity 1200 </option>
+<option value="MediaTek Dimensity 700 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Dimensity 700 </option>
+<option value="MediaTek Dimensity 700 (MT6833) " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Dimensity 700 (MT6833) </option>
+<option value="MediaTek Dimensity 800U " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Dimensity 800U </option>
+<option value="MediaTek Dimensity 810 5G " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Dimensity 810 5G </option>
+<option value="MediaTek G37 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek G37 </option>
+<option value="MediaTek Helio A20 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio A20 </option>
+<option value="MediaTek Helio A20 Quad Core " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio A20 Quad Core </option>
+<option value="MediaTek Helio G25 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio G25 </option>
+<option value="MediaTek Helio G35 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio G35 </option>
+<option value="MediaTek Helio G37 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio G37 </option>
+<option value="MediaTek Helio G37 Octa Core " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio G37 Octa Core </option>
+<option value="MediaTek Helio G70 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio G70 </option>
+<option value="MediaTek Helio G80 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio G80 </option>
+<option value="MediaTek Helio G85 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio G85 </option>
+<option value="MediaTek Helio G85 (MT6769V/CZ) " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio G85 (MT6769V/CZ) </option>
+<option value="MediaTek Helio G88 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio G88 </option>
+<option value="MediaTek Helio G95 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio G95 </option>
+<option value="MediaTek Helio G96 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio G96 </option>
+<option value="MediaTek Helio P35 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio P35 </option>
+<option value="MediaTek Helio P35 (MT6765) " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio P35 (MT6765) </option>
+<option value="MediaTek Helio P35 Octa Core " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio P35 Octa Core </option>
+<option value="MediaTek Helio P60 Octa Core 2.0 GHz " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek Helio P60 8 Core 2.0 GHz </option>
+<option value="MediaTek MT8781 Helio G99 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek MT8781 Helio G99 </option>
+<option value="MediaTek P22 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">MediaTek P22 </option>
+<option value="Mediatek " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek </option>
+<option value="Mediatek Dimensity 1080 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Dimensity 1080 </option>
+<option value="Mediatek Dimensity 1080 5G " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Dimensity 1080 5G </option>
+<option value="Mediatek Dimensity 1200 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Dimensity 1200 </option>
+<option value="Mediatek Dimensity 1300 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Dimensity 1300 </option>
+<option value="Mediatek Dimensity 700 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Dimensity 700 </option>
+<option value="Mediatek Dimensity 810 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Dimensity 810 </option>
+<option value="Mediatek Dimensity 810 5G " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Dimensity 810 5G </option>
+<option value="Mediatek Dimensity 8100 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Dimensity 8100 </option>
+<option value="Mediatek Dimensity 8100 Max " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Dimensity 8100 Max </option>
+<option value="Mediatek Dimensity 920 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Dimensity 920 </option>
+<option value="Mediatek G37 Octa Core  " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek G37 Octa Core  </option>
+<option value="Mediatek G96 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek G96 </option>
+<option value="Mediatek G99 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek G99 </option>
+<option value="Mediatek Helio A22 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio A22 </option>
+<option value="Mediatek Helio A22 , Upto 2.0 GHz " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio A22,Upto 2.0 GHz </option>
+<option value="Mediatek Helio G25 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio G25 </option>
+<option value="Mediatek Helio G35 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio G35 </option>
+<option value="Mediatek Helio G37 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio G37 </option>
+<option value="Mediatek Helio G70 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio G70 </option>
+<option value="Mediatek Helio G80 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio G80 </option>
+<option value="Mediatek Helio G85 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio G85 </option>
+<option value="Mediatek Helio G88 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio G88 </option>
+<option value="Mediatek Helio G95 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio G95 </option>
+<option value="Mediatek Helio G95 Octa Core " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio G95 Octa Core </option>
+<option value="Mediatek Helio G96 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio G96 </option>
+<option value="Mediatek Helio G99 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio G99 </option>
+<option value="Mediatek Helio G99 Octa Core " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio G99 Octa Core </option>
+<option value="Mediatek Helio P22 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio P22 </option>
+<option value="Mediatek Helio P35 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek Helio P35 </option>
+<option value="Mediatek MT6769 Helio G70 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek MT6769 Helio G70 </option>
+<option value="Mediatek MTK6737 Quad Core 1.3Ghz " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Mediatek MTK6737 8 Core 1.3Ghz </option>
+<option value="Meditek Helio G37 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Meditek Helio G37 </option>
+<option value="Octa Core " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Octa Core </option>
+<option value="Octa-core " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Octa-core </option>
+<option value="Octa-core(EXYNOS) " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Octa-core(EXYNOS) </option>
+<option value="QUAD CORE " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">QUAD CORE </option>
+<option value="Quad Core " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Quad Core </option>
+<option value="Qualcomm Snapdragon 425 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 425 </option>
+<option value="Qualcomm Snapdragon 439 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 439 </option>
+<option value="Qualcomm Snapdragon 480 Pro " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 480 Pro </option>
+<option value="Qualcomm Snapdragon 660 AIE " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 660 AIE </option>
+<option value="Qualcomm Snapdragon 680 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 680 </option>
+<option value="Qualcomm Snapdragon 680 (SM6225) " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 680</option>
+<option value="Qualcomm Snapdragon 695 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 695 </option>
+<option value="Qualcomm Snapdragon 695 (SM6375) " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 695</option>
+<option value="Qualcomm Snapdragon 695 5G " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 695 5G </option>
+<option value="Qualcomm Snapdragon 720G " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 720G </option>
+<option value="Qualcomm Snapdragon 730 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 730 </option>
+<option value="Qualcomm Snapdragon 730G " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 730G </option>
+<option value="Qualcomm Snapdragon 732G " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 732G </option>
+<option value="Qualcomm Snapdragon 750G " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 750G </option>
+<option value="Qualcomm Snapdragon 778G " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 778G </option>
+<option value="Qualcomm Snapdragon 778G 5G Mobile Platform " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Q Snapdragon 778G 5G MP</option>
+<option value="Qualcomm Snapdragon 778G Plus " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 778G Plus </option>
+<option value="Qualcomm Snapdragon 8 Gen 1 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 8 Gen 1 </option>
+<option value="Qualcomm Snapdragon 8 Gen 1 Mobile Platform " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Q Snapdragon 8 Gen 1 MP</option>
+<option value="Qualcomm Snapdragon 8 Gen 2 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 8 Gen 2 </option>
+<option value="Qualcomm Snapdragon 8+ Gen 1 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 8+ Gen 1 </option>
+<option value="Qualcomm Snapdragon 860 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 860 </option>
+<option value="Qualcomm Snapdragon 870 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 870 </option>
+<option value="Qualcomm Snapdragon 888 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 888 </option>
+<option value="Qualcomm Snapdragon 888 + " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 888 + </option>
+<option value="Qualcomm Snapdragon 888 Octa-Core " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Qualcomm Snapdragon 888 8-Core </option>
+<option value="SC9832 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">SC9832 </option>
+<option value="SC9863A " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">SC9863A </option>
+<option value="SEC S5E8535 (Exynos 1330) " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">SEC S5E8535 (Exynos 1330) </option>
+<option value="Snapdragon 662 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Snapdragon 662 </option>
+<option value="Snapdragon 720G " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Snapdragon 720G </option>
+<option value="Turbo  Snapdragon 695 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Turbo  Snapdragon 695 </option>
+<option value="UNISOC T700 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">UNISOC T700 </option>
+<option value="UniSoc T610 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">UniSoc T610 </option>
+<option value="Unisoc 9832E " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc 9832E </option>
+<option value="Unisoc 9863A " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc 9863A </option>
+<option value="Unisoc SC9863 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc SC9863 </option>
+<option value="Unisoc SC9863A " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc SC9863A </option>
+<option value="Unisoc SC9863A Octa Core " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc SC9863A Octa Core </option>
+<option value="Unisoc SC9863A/ Unisoc SC9863A1 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc SC9863A/ Unisoc SC9863A1 </option>
+<option value="Unisoc T606 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc T606 </option>
+<option value="Unisoc T610 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc T610 </option>
+<option value="Unisoc T612 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc T612 </option>
+<option value="Unisoc T616 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc T616 </option>
+<option value="Unisoc T618 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc T618 </option>
+<option value="Unisoc Tiger T616 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc Tiger T616 </option>
+<option value="Unisoc UMS9230 " class="bg-gradient-to-r from-yellow-500 to-red-400 text-black">Unisoc UMS9230 </option>
+
+</select>
+<br><br>
+<button id="predict" class="m-1 text-md font-bold bg-gradient-to-t border-2 border-white  from-yellow-500 to-red-400 hover:bg-gradient-to-b p-1 rounded-md">Predict Price</button>
+<h1 class="m-3 mb-0 text-3xl font-bold" id="price" >&#x20B9 0</h1>
+<span class="text-[8px]"><b class="text-black">Note :</b> This predicted price is 86% correct!</span>
+</center>
+    </div>
+  <!-- <h1 class="text-3xl font-bold underline"> -->
+  </h1>
+
+  <script>
+    $('#predict').click(function(){
+        // $('#price').html('&#x20B9 10,000') 
+        var ran = setInterval(function(){
+           var dummy_price = String(Math.random()).slice(5,10)
+           dummy_price = dummy_price.slice(0,2)+','+dummy_price.slice(2,5)
+            $('#price').html('&#x20B9 '+dummy_price) 
+            
+        },0)
+        // setTimeout(function(){
+        //     clearInterval(ran)
+        // },2000)
+
+        $.ajax({
+            url:'/api/get_predicted_price/',
+            method:'POST',
+            data:{
+                name:document.getElementById('mob_name').value,
+                ram:document.getElementById('mob_ram').value,
+                rom:document.getElementById('mob_rom').value,
+                size:document.getElementById('mob_size').value,
+                type:document.getElementById('mob_display').value,
+                fcam:document.getElementById('mob_fcam').value,
+                bcam:document.getElementById('mob_bcam').value,
+                battery:document.getElementById('mob_battery').value,
+                proc:document.getElementById('mob_proc').value,
+            },
+            success:function(res){
+                setTimeout(function(){
+                clearInterval(ran)
+                $('#price').html('&#x20B9 '+res.price) 
+        },2000) 
+            }
+        })
+    
+    })
+
+
+
+
+
+  </script>
+</body>
+</html>
